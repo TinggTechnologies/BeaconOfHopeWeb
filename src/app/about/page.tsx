@@ -27,7 +27,7 @@ const Cook = () => {
                         
                         <div className="space-y-6">
                             <p className='text-black/70 dark:text-white/70 text-lg'>
-                                At Beacon of Hope, we are committed to revolutionizing digital banking by providing seamless, secure, and innovative financial solutions tailored to meet the needs of individuals and businesses.
+                                At Beacon of Hope Cooperative Ark, we are committed to revolutionizing digital banking by providing seamless, secure, and innovative financial solutions tailored to meet the needs of individuals and businesses.
                             </p>
                             
                             <div className="prose dark:prose-invert max-w-none">
