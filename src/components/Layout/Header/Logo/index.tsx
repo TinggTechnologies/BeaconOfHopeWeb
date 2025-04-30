@@ -9,7 +9,7 @@ const Logo: React.FC = () => {
         src="/images/logo/icon.png"
         alt="logo"
         width={70}
-        height={70}
+        height={50}
         style={{ width: 'auto', height: 'auto', borderRadius: "50%", }}
         quality={100}
       />

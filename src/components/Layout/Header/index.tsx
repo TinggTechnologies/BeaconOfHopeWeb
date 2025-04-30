@@ -1,19 +1,23 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { headerData } from "../Header/Navigation/menuData";
 import Logo from "./Logo";
 import HeaderLink from "../Header/Navigation/HeaderLink";
 import MobileHeaderLink from "../Header/Navigation/MobileHeaderLink";
 import { useTheme } from "next-themes";
-import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Header: React.FC = () => {
   const pathUrl = usePathname();
   const { theme, setTheme } = useTheme();
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [sticky, setSticky] = useState(false);
+
+  // Close menu when route changes
+  useEffect(() => {
+    setNavbarOpen(false);
+  }, [pathUrl]);
 
   const handleScroll = () => {
     setSticky(window.scrollY >= 20);
@@ -28,7 +32,9 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 z-40 w-full transition-all duration-300 ${sticky ? " shadow-lg bg-white dark:bg-gray-600 py-1" : "shadow-none py-1"}`}
+      className={`fixed top-0 z-40 w-full transition-all duration-300 ${
+        sticky ? " shadow-lg bg-white dark:bg-gray-600 py-1" : "shadow-none py-1"
+      }`}
     >
       <div className="lg:py-0 py-0">
         <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md flex items-center justify-between px-4">
@@ -55,6 +61,7 @@ const Header: React.FC = () => {
               onClick={() => setNavbarOpen(!navbarOpen)}
               className="block lg:hidden p-2 rounded-lg"
               aria-label="Toggle mobile menu"
+              aria-expanded={navbarOpen}
             >
               <span className="block w-6 h-0.5 bg-black"></span>
               <span className="block w-6 h-0.5 bg-black mt-1.5"></span>
@@ -63,10 +70,16 @@ const Header: React.FC = () => {
           </div>
         </div>
         {navbarOpen && (
-          <div className="fixed top-0 left-0 w-full h-full bg-opacity-100 z-40" style={{backgroundColor: "grey", }} />
+          <div
+            className="fixed top-0 left-0 w-full h-full bg-opacity-100 z-40"
+            style={{ backgroundColor: "grey" }}
+            onClick={() => setNavbarOpen(false)} // Close when clicking overlay
+          />
         )}
         <div
-          className={`lg:hidden fixed top-0 right-0 h-full w-full bg-white shadow-lg transform transition-transform duration-300 max-w-xs ${navbarOpen ? "translate-x-0" : "translate-x-full"} z-50`}
+          className={`lg:hidden fixed top-0 right-0 h-full w-full bg-white shadow-lg transform transition-transform duration-300 max-w-xs ${
+            navbarOpen ? "translate-x-0" : "translate-x-full"
+          } z-50`}
         >
           <div className="flex items-center justify-between p-4">
             <h2 className="text-lg font-bold text-midnight_text dark:text-midnight_text">
@@ -80,7 +93,11 @@ const Header: React.FC = () => {
           </div>
           <nav className="flex flex-col items-start p-4">
             {headerData.map((item, index) => (
-              <MobileHeaderLink key={index} item={item} />
+              <MobileHeaderLink
+                key={index}
+                item={item}
+                onClick={() => setNavbarOpen(false)}
+              />
             ))}
           </nav>
         </div>
@@ -90,4 +107,3 @@ const Header: React.FC = () => {
 };
 
 export default Header;
-

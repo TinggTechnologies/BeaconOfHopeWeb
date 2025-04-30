@@ -1,10 +1,9 @@
-export type SubmenuItem = {
+// types/menu.ts
+export interface HeaderItem {
+  label: string;
+  href: string; // Required
+  submenu?: {
     label: string;
-    href: string;
-  };    
-  
-  export type HeaderItem = {
-    label: string;
-    href: string;
-    submenu?: SubmenuItem[];
-  };
+    href: string; // Required for subitems
+  }[];
+}
