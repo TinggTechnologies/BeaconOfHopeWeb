@@ -55,7 +55,7 @@ const Hero = () => {
                         transition={{ duration: .5, delay: 0.3, ease: "easeOut" }}
                         viewport={{ once: true }}
                     >
-                        <Image src="/images/hero/banner-image.png" alt="nothing" width={1000} height={805} />
+                        <Image src="/images/hero/appbackground.png" alt="nothing" width={1000} height={805} />
                     </motion.div>
                 </div>
             </div>
