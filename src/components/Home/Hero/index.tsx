@@ -32,7 +32,7 @@ const Hero = () => {
                                     height={30} 
                                     style={{ borderRadius: '50%' }} 
                                 />
-                                <Link href="#cook-section" className="text-xl font-medium text-white text-center">
+                                <Link href="#cook-section" target="_blank" className="text-xl font-medium text-white text-center">
                                     Download on Android
                                 </Link>
                             </div>
@@ -44,7 +44,7 @@ const Hero = () => {
                                     height={30} 
                                     style={{ borderRadius: '50%' }} 
                                 />
-                                <Link href='#about-section'>Download on IOS</Link>
+                                <Link target="_blank" href='#about-section'>Download on IOS</Link>
                             </div>
                         </div>
                     </div>
