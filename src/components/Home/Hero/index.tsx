@@ -20,8 +20,8 @@ const Hero = () => {
                             Join Beacon of Hope Cooperative Ark Today!
                         </h1>
                         <p className='text-black/55 dark:text-white/50 lg:text-lg font-normal mb-10 lg:text-start text-center'>
-                        Seamless Bill Payments – All in One App!
-                        <br /> Recharge airtime, buy data, and pay for cable TV effortlessly anytime, anywhere.
+                        Seamless Savings, Instant Loans & Smart Banking – All in One App!
+                        <br /> Manage your finances effortlessly, access instant credit, and grow your wealth with ease.
                         </p>
                         <div className='md:flex gap-3 align-center justify-center lg:justify-start'>
                             <div className="flex items-center justify-start gap-2 rounded-full py-5 px-6 bg-primary hover:text-primary lg:px-17 border border-primary hover:bg-transparent w-full md:w-auto">

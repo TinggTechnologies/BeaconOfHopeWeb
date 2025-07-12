@@ -22,12 +22,19 @@ const Cook = () => {
         </p>
 
         <h2 className="text-3xl lg:text-5xl font-semibold text-black dark:text-white mb-6">
-          Seamless Digital Services
+          Seamless Payment Services
         </h2>
 
         <div className="space-y-6">
           <p className='text-black/70 dark:text-white/70 text-lg'>
-            At Beacon of Hope Cooperative Ark, we are dedicated to simplifying your everyday digital life. Our platform offers fast, secure, and user-friendly solutions for managing essential services like airtime, data, and cable TV subscriptions.
+          At Beacon of Hope, we are committed to revolutionizing digital
+              banking by providing seamless, secure, and innovative financial
+              solutions tailored to meet the needs of individuals and
+              businesses. Our platform enables users to effortlessly manage
+              their savings and wallets, offering real-time tracking of
+              deposits, withdrawals, and balances. Customers receive instant
+              credit and debit alerts, ensuring they stay updated with every
+              transaction for better financial awareness.
           </p>
 
           <div className="prose dark:prose-invert max-w-none">
@@ -45,6 +52,7 @@ const Cook = () => {
             </h3>
             <ol className="list-decimal pl-5 space-y-2" start={4}>
               <li>Track your payment history with ease</li>
+              <li>Get loans for your business</li>
               <li>Enjoy a simple and intuitive user dashboard</li>
               <li>Get reminders for subscription renewals</li>
               <li>Use biometric login for added security</li>
@@ -62,7 +70,7 @@ const Cook = () => {
           </div>
 
           <p className='text-black/70 dark:text-white/70 text-lg mt-6'>
-            Whether you’re topping up airtime, renewing your TV subscription, or buying data, Beacon of Hope makes it fast, simple, and secure — anytime, anywhere.
+            Whether you’re making payments, investing, topping up airtime, renewing your TV subscription, or buying data, Beacon of Hope makes it fast, simple, and secure — anytime, anywhere.
           </p>
         </div>
       </div>

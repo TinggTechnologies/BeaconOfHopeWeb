@@ -1,4 +1,11 @@
-import { Smartphone, Tv2, ShieldCheck, ShoppingCart } from "lucide-react";
+import {
+  Smartphone,
+  Tv2,
+  ShieldCheck,
+  ShoppingCart,
+  PiggyBank,
+  CreditCard,
+} from "lucide-react";
 
 export const FeaturesData: {
   icon: JSX.Element;
@@ -6,26 +13,37 @@ export const FeaturesData: {
   subheading: string;
 }[] = [
   {
-    icon: <Smartphone size={40} />, // Icon for airtime and data
+    icon: <PiggyBank size={40} />,
+    heading: "Smart Savings & Investments",
+    subheading: "Save and invest effortlessly with high returns.",
+  },
+  {
+    icon: <CreditCard size={40} />,
+    heading: "Instant Loans & Credit Access",
+    subheading: "Get instant loans with flexible repayment options.",
+  },
+  {
+    icon: <ShieldCheck size={40} />,
+    heading: "Secure Digital Banking",
+    subheading: "Transfer funds, pay bills, and manage your account securely.",
+  },
+  {
+    icon: <ShoppingCart size={40} />,
+    heading: "Marketplace & Services",
+    subheading: "Connect with members to trade goods and services.",
+  },
+  {
+    icon: <Smartphone size={40} />,
     heading: "Airtime & Data Recharge",
     subheading: "Top up any network instantly with just a few taps.",
   },
   {
-    icon: <Tv2 size={40} />, // Icon for cable TV
+    icon: <Tv2 size={40} />,
     heading: "Cable TV Payments",
     subheading: "Pay for DSTV, GOTV, and more without hassle.",
   },
-  {
-    icon: <ShieldCheck size={40} />, // Icon for secure transactions
-    heading: "Fast & Secure Payments",
-    subheading: "Enjoy quick and secure bill payment experiences.",
-  },
-  {
-    icon: <ShoppingCart size={40} />, // Icon for marketplace
-    heading: "Marketplace & Services",
-    subheading: "Buy and sell goods or services within your community.",
-  },
 ];
+
 
 
 
