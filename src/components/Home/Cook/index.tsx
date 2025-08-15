@@ -72,13 +72,13 @@ const Cook = () => {
               className="text-3xl lg:text-5xl font-semibold text-black dark:text-white text-start"
               variants={textVariants}
             >
-              Seamless financial services for your business.
+              Innovative solutions for your needs
             </motion.h2>
             <motion.p
               className="text-black/50 dark:text-white/50 md:text-lg font-normal mb-10 text-start mt-2"
               variants={textVariants}
             >
-              At Beacon of Hope, we are committed to revolutionizing digital banking by providing seamless, secure, and innovative financial solutions tailored to meet the needs of individuals and businesses. Our platform enables users to effortlessly manage their savings and wallets, offering real-time tracking of deposits, withdrawals, and balances. Customers receive instant credit and debit alerts, ensuring they stay updated with every transaction for better financial awareness.
+              At Beacon of Hope, we are committed to revolutionizing digital experiences by providing seamless, secure, and innovative solutions tailored to meet the needs of individuals and businesses. Our platform enables users to effortlessly manage their activities with real-time updates and notifications.
             </motion.p>
 
             {/* Navigation Button */}

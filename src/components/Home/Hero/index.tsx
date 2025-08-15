@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -17,11 +17,11 @@ const Hero = () => {
                 <div className='grid grid-cols-1 lg:grid-cols-12 items-center'>
                     <div className='col-span-6'>
                         <h1 className="text-4xl lg:text-6xl font-semibold mb-5 text-black dark:text-white md:4px lg:text-start text-center">
-                            Join Beacon of Hope Cooperative Ark Today!
+                            Join Beacon of Hope Community Today!
                         </h1>
                         <p className='text-black/55 dark:text-white/50 lg:text-lg font-normal mb-10 lg:text-start text-center'>
-                        Seamless Savings, Instant Loans & Smart Banking – All in One App!
-                        <br /> Manage your finances effortlessly, access instant credit, and grow your wealth with ease.
+                        Connect, collaborate and grow with our innovative platform!
+                        <br /> Manage your activities effortlessly and stay updated with real-time notifications.
                         </p>
                         <div className='md:flex gap-3 align-center justify-center lg:justify-start'>
                             <div className="flex items-center justify-start gap-2 rounded-full py-5 px-6 bg-primary hover:text-primary lg:px-17 border border-primary hover:bg-transparent w-full md:w-auto">
