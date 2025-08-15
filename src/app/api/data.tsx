@@ -13,26 +13,6 @@ export const FeaturesData: {
   subheading: string;
 }[] = [
   {
-    icon: <PiggyBank size={40} />,
-    heading: "Smart Savings & Investments",
-    subheading: "Save and invest effortlessly with high returns.",
-  },
-  {
-    icon: <CreditCard size={40} />,
-    heading: "Instant Loans & Credit Access",
-    subheading: "Get instant loans with flexible repayment options.",
-  },
-  {
-    icon: <ShieldCheck size={40} />,
-    heading: "Secure Digital Banking",
-    subheading: "Transfer funds, pay bills, and manage your account securely.",
-  },
-  {
-    icon: <ShoppingCart size={40} />,
-    heading: "Marketplace & Services",
-    subheading: "Connect with members to trade goods and services.",
-  },
-  {
     icon: <Smartphone size={40} />,
     heading: "Airtime & Data Recharge",
     subheading: "Top up any network instantly with just a few taps.",
