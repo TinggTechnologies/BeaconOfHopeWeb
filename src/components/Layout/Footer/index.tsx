@@ -53,37 +53,6 @@ const Footer: FC = () => {
                   About
                 </Link>
               </li>
-             
-              <li className="pb-5">
-                <Link
-                  href="#"
-                  className="text-black/70 dark:text-white/70 hover:text-primary dark:hover:text-primary text-base"
-                >
-                  Blog
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className="">
-            <h4 className="text-black dark:text-white mb-9 font-semibold text-xl">Information</h4>
-            <ul>
-              <li className="pb-5">
-                <Link
-                  href="#"
-                  className="text-black/70 dark:text-white/70 dark:hover:text-primary hover:text-primary text-base"
-                >
-                  Help/FAQ
-                </Link>
-              </li>
-             
-              <li className="pb-5">
-                <Link
-                  href="#"
-                  className="text-black/70 dark:text-white/70 hover:text-primary dark:hover:text-primary text-base"
-                >
-                  Partners
-                </Link>
-              </li>
             </ul>
           </div>
           <div className="">
