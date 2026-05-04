@@ -1,8 +1,8 @@
-import React, { FC } from "react";
-import Link from "next/link";
-import { headerData } from "../Header/Navigation/menuData";
 import { Icon } from "@iconify/react";
+import Link from "next/link";
+import { FC } from "react";
 import Logo from "../Header/Logo";
+import { headerData } from "../Header/Navigation/menuData";
 
 const Footer: FC = () => {
   return (
