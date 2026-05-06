@@ -24,7 +24,7 @@ const Hero = () => {
                         <br /> Manage your activities effortlessly and stay updated with real-time notifications.
                         </p>
                         <div className='md:flex gap-3 align-center justify-center lg:justify-start'>
-                            <div className="flex items-center justify-start gap-2 rounded-full py-5 px-6 bg-primary hover:text-primary lg:px-17 border border-primary hover:bg-transparent w-full md:w-auto">
+                            {/* <div className="flex items-center justify-start gap-2 rounded-full py-5 px-6 bg-primary hover:text-primary lg:px-17 border border-primary hover:bg-transparent w-full md:w-auto">
                                 <Image 
                                     src="/images/googleplay.jpg" 
                                     alt="nothing" 
@@ -45,7 +45,7 @@ const Hero = () => {
                                     style={{ borderRadius: '50%' }} 
                                 />
                                 <Link target="_blank" href='https://www.apple.com/app-store/'>Download on IOS</Link>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <motion.div 

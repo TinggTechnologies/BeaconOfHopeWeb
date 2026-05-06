@@ -45,18 +45,6 @@ const Header: React.FC = () => {
             ))}
           </nav>
           <div className="flex items-center gap-4">
-            <Link
-              href="https://play.google.com/store"
-              className="hidden lg:block text-primary bg-primary/15 hover:text-white hover:bg-primary font-medium text-lg py-4 px-8 rounded-full"
-            >
-              Google Play
-            </Link>
-            <Link
-              href="https://www.apple.com/app-store/"
-              className="hidden lg:block bg-primary text-white hover:bg-primary/15 hover:text-primary font-medium text-lg py-4 px-8 rounded-full"
-            >
-              Apple Store
-            </Link>
             <button
               onClick={() => setNavbarOpen(!navbarOpen)}
               className="block lg:hidden p-2 rounded-lg"

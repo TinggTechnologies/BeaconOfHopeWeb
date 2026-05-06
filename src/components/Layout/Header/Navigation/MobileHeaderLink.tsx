@@ -40,9 +40,15 @@ const MobileHeaderLink: React.FC<MobileHeaderLinkProps> = ({ item, onClick }) =>
             handleLinkClick(e as any);
           }
         }}
-        className={`flex items-center justify-between w-full py-3 px-4 text-gray-800 hover:text-primary dark:text-gray-200 dark:hover:text-primary transition-colors ${
-          item.submenu ? "cursor-pointer" : ""
-        }`}
+        className={
+          item.label === "Register"
+            ? "flex items-center w-full py-3 px-4 text-white bg-primary rounded-full hover:bg-transparent hover:text-primary border border-primary font-medium transition-colors"
+            : item.label === "Login"
+            ? "flex items-center w-full py-3 px-4 text-primary border border-primary rounded-full hover:bg-primary hover:text-white font-medium transition-colors"
+            : `flex items-center justify-between w-full py-3 px-4 text-gray-800 hover:text-primary dark:text-gray-200 dark:hover:text-primary transition-colors ${
+                item.submenu ? "cursor-pointer" : ""
+              }`
+        }
         aria-expanded={item.submenu ? submenuOpen : undefined}
         aria-haspopup={item.submenu ? "true" : undefined}
       >

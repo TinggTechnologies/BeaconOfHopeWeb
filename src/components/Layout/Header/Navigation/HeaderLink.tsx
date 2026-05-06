@@ -24,8 +24,13 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
     >
       <Link
         href={item.href}
-        className={`text-xl flex font-medium duration-300  ${path === item.href ? "text-primary " : " text-black/50 dark:text-white/50 hover:text-primary dark:hover:text-primary"
-          }`}
+        className={
+          item.label === "Register"
+            ? "text-xl font-medium rounded-full text-white py-2 px-6 bg-primary border border-primary hover:bg-transparent hover:text-primary"
+            : item.label === "Login"
+            ? "text-xl font-medium rounded-full text-primary py-2 px-6 border border-primary hover:bg-primary hover:text-white"
+            : `text-xl flex font-medium duration-300 ${path === item.href ? "text-primary" : "text-black/50 dark:text-white/50 hover:text-primary dark:hover:text-primary"}`
+        }
       >
         {item.label}
         {item.submenu && (

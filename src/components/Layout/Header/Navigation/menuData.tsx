@@ -5,4 +5,6 @@ export const headerData: HeaderItem[] = [
   { label: "About Us", href: "/about" },
   { label: "Features", href: "/features" },
   { label: "Contact", href: "/contacts" },
+  { label: "Login", href: "https://www.beaconofhopecooperative.com.ng/auth/login" },
+  { label: "Register", href: "https://www.beaconofhopecooperative.com.ng/auth/register" },
 ];
