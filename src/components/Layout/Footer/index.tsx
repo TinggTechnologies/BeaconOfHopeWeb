@@ -8,7 +8,7 @@ const Footer: FC = () => {
   return (
     <footer className="pt-16 bg-darkmode">
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-5 lg:gap-20 md:gap-6 sm:gap-12 gap-6  pb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-6 lg:gap-20 md:gap-6 sm:gap-12 gap-6  pb-16">
           <div className="col-span-2">
             <Logo />
             <p className="text-xs font-medium text-grey dark:text-white/50 mt-5 mb-16 max-w-70%">
@@ -67,6 +67,59 @@ const Footer: FC = () => {
                   </Link>
                 </li>
               ))}
+            </ul>
+          </div>
+          <div className="">
+            <h4 className="text-black dark:text-white mb-9 font-semibold text-xl">Policies</h4>
+            <ul>
+              <li className="pb-4">
+                <Link
+                  href="/policies/terms-of-service"
+                  className="text-black/70 dark:text-white/70 dark:hover:text-primary hover:text-primary text-base"
+                >
+                  Terms of Service
+                </Link>
+              </li>
+              <li className="pb-4">
+                <Link
+                  href="/policies/privacy-policy"
+                  className="text-black/70 dark:text-white/70 dark:hover:text-primary hover:text-primary text-base"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li className="pb-4">
+                <Link
+                  href="/policies/refund-policy"
+                  className="text-black/70 dark:text-white/70 dark:hover:text-primary hover:text-primary text-base"
+                >
+                  Refund Policy
+                </Link>
+              </li>
+              <li className="pb-4">
+                <Link
+                  href="/policies/cancellation-policy"
+                  className="text-black/70 dark:text-white/70 dark:hover:text-primary hover:text-primary text-base"
+                >
+                  Cancellation Policy
+                </Link>
+              </li>
+              <li className="pb-4">
+                <Link
+                  href="/policies/cookie-policy"
+                  className="text-black/70 dark:text-white/70 dark:hover:text-primary hover:text-primary text-base"
+                >
+                  Cookie Policy
+                </Link>
+              </li>
+              <li className="pb-4">
+                <Link
+                  href="/policies/disclaimer"
+                  className="text-black/70 dark:text-white/70 dark:hover:text-primary hover:text-primary text-base"
+                >
+                  Disclaimer
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
